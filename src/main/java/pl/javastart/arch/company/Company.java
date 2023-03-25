@@ -1,6 +1,7 @@
-package pl.javastart.arch;
+package pl.javastart.arch.company;
 
 import jakarta.persistence.*;
+import pl.javastart.arch.joboffer.JobOffer;
 
 import java.util.ArrayList;
 import java.util.List;

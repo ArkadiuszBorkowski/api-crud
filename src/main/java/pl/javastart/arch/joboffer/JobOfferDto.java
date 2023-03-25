@@ -1,4 +1,4 @@
-package pl.javastart.arch;
+package pl.javastart.arch.joboffer;
 
 import java.time.LocalDateTime;
 

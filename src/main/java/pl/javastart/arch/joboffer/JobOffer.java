@@ -1,13 +1,12 @@
-package pl.javastart.arch;
+package pl.javastart.arch.joboffer;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
+import pl.javastart.arch.company.Company;
 
 import java.time.LocalDateTime;
 
 @Entity
-class JobOffer {
+public class JobOffer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

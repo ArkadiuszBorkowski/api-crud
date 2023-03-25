@@ -1,6 +1,7 @@
-package pl.javastart.arch;
+package pl.javastart.arch.company;
 
 import org.springframework.stereotype.Service;
+import pl.javastart.arch.joboffer.JobOffer;
 
 @Service
 class CompanyJobOfferDtoMapper {

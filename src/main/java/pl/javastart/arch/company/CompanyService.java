@@ -1,12 +1,10 @@
-package pl.javastart.arch;
+package pl.javastart.arch.company;
 
-import jakarta.persistence.Id;
 import org.springframework.stereotype.Service;
 
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @Service
 class CompanyService {
@@ -33,4 +31,12 @@ class CompanyService {
                 .map(companyJobOfferDtoMapper::map)
                 .toList();
     }
+
+    CompanyDto saveCompany(CompanyDto companyDto) {
+        Company company = companyDtoMapper.map(companyDto);
+        Company savedCompany = companyRepository.save(company);
+        return companyDtoMapper.map(savedCompany);
+    }
+
+
 }
